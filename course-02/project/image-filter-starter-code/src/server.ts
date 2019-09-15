@@ -41,7 +41,7 @@ import { runInNewContext } from 'vm';
       }
 
       // Deconstruct image_url parameter
-      const image_url:string = req.query.image_url;
+      const {image_url} = req.query;
 
       // Grab filtered Image from Url
       const img = await filterImageFromURL(image_url);
