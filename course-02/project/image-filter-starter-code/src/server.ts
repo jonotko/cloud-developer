@@ -41,13 +41,13 @@ import { runInNewContext } from 'vm';
       }
 
       // Deconstruct image_url parameter
-      const {image_url} = req.query;
+      const { image_url } = req.query;
 
       // Grab filtered Image from Url
       const img = await filterImageFromURL(image_url);
 
       // Send file to client
-      res.status(200).sendFile(img,(error) => {
+      res.status(200).sendFile(img, (error) => {
         if(!error){
           deleteLocalFiles([img]);
         }
