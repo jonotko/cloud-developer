@@ -5,3 +5,6 @@ services:
   - docker
 script:
   - cd ./course-03/exercises/udacity-c3-deployment/docker
+  - docker-compose pull
+  - docker-compose build
+  - docker ps
