@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - stable
+services:
+  - docker
+script:
+  - cd ./course-03/exercises/udacity-c3-deployment/docker
