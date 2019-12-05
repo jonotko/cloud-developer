@@ -3,13 +3,15 @@ kind: Deployment
 metadata:
   labels:
     service: backend-feed
+    version: v2
   name: backend-feed
 spec:
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
         service: backend-feed
+        version: v2
     spec:
       containers:
       - image: jonocto/udacity-c3-restapi-feed
