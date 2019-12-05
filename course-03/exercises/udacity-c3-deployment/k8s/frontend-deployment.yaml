@@ -13,7 +13,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image: jonocto/udacity-c3-frontend:local
+      - image: jonocto/udacity-c3-frontend
         name: frontend
         imagePullPolicy: Always          
         ports:
